@@ -14,7 +14,7 @@
 		$password = $_POST['password'];
 		$repassword = $_POST['repassword'];
 		if (empty($_POST['referral'])) {
-			$referral = 'royal-asset';
+			$referral = 'primeassetsltd';
 		}else{$referral = $_POST['referral'];}
 		$type = 0;
 		$status = 0;

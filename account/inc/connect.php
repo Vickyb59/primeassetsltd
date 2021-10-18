@@ -1,10 +1,10 @@
 <?php
 $servername = "localhost";
 // Enter your MySQL username below(default=root)
-$username = "hilandin_ra";
+$username = "root";
 // Enter your MySQL password below
-$password = "hilandin_ra";
-$dbname = "hilandin_ra";
+$password = "";
+$dbname = "primeass_db";
 
 // Create connection
 $conne = new mysqli($servername, $username, $password, $dbname);

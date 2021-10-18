@@ -2,9 +2,9 @@
 
 Class Database{
  
-	private $server = "mysql:host=localhost;dbname=hilandin_ra";
-	private $username = "hilandin_ra";
-	private $password = "hilandin_ra";
+	private $server = "mysql:host=localhost;dbname=primeass_db";
+	private $username = "root";
+	private $password = "";
 	private $options  = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,);
 	protected $conn;
  	
@@ -30,10 +30,10 @@ $pdo = new Database();
 
 $servername = "localhost";
 // Enter your MySQL username below(default=root)
-$username = "hilandin_ra";
+$username = "root";
 // Enter your MySQL password below
-$password = "hilandin_ra";
-$dbname = "hilandin_ra";
+$password = "";
+$dbname = "primeass_db";
 
 // Create connection
 $conne = new mysqli($servername, $username, $password, $dbname);

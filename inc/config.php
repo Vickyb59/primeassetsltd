@@ -26,25 +26,25 @@
 		if(
 			( $_SERVER['REMOTE_ADDR'] == '::1' ) || ( $_SERVER['REMOTE_ADDR'] == '127.0.0.1' )
 		){ 		
-			$baseurl = 'http://localhost/royal-asset';			
+			$baseurl = 'http://localhost/primeassetsltd';			
 		}  else {			
-			$baseurl = 'https://royal-asset.com/';
+			$baseurl = 'https://primeassetsltd.com/';
 		}
 	//main url for SEO configurations
-	$main_url = 'https://royal-asset.com/';
-	$sweet_url = 'royal-asset.com';
-	$noreply_password = 'Rasset@001';
+	$main_url = 'https://primeassetsltd.com/';
+	$sweet_url = 'primeassetsltd.com';
+	$noreply_password = 'Pass@001-.com';
 	//main website configuration settings
 		$settings = (object) array(
 			'active' => 'active',
-			'siteTitle' => 'Royal Assets',
-			'siteTitleCap' => 'ROYAL ASSETS',
+			'siteTitle' => 'Prime Assets',
+			'siteTitleCap' => 'PRIME ASSETS',
 			'siteTagline' => 'A Cryptocurrency Investment Company',
 			'phoneNumber' => '+1 (516) 2001 615',
 			'address' => '38 Curity Ave, East York, ON M4B 0A2, Canada',
-			'email' => 'info@royal-asset.com',
-			'email2' => 'support@royal-asset.com',
-			'email3' => 'sales@royal-asset.com',
+			'email' => 'info@primeassetsltd.com',
+			'email2' => 'support@primeassetsltd.com',
+			'email3' => 'sales@primeassetsltd.com',
 			'instagram' => '',
 			'facebook' => '',
 			'linkedin' => '',
