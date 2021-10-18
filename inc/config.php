@@ -26,13 +26,13 @@
 		if(
 			( $_SERVER['REMOTE_ADDR'] == '::1' ) || ( $_SERVER['REMOTE_ADDR'] == '127.0.0.1' )
 		){ 		
-			$baseurl = 'http://localhost/primeassetsltd';			
+			$baseurl = 'http://localhost/primeassetslimited';
 		}  else {			
-			$baseurl = 'https://primeassetsltd.com/';
+			$baseurl = 'https://primeassetslimited.com/';
 		}
 	//main url for SEO configurations
-	$main_url = 'https://primeassetsltd.com/';
-	$sweet_url = 'primeassetsltd.com';
+	$main_url = 'https://primeassetslimited.com/';
+	$sweet_url = 'primeassetslimited.com';
 	$noreply_password = 'Pass@001-.com';
 	//main website configuration settings
 		$settings = (object) array(
@@ -42,9 +42,9 @@
 			'siteTagline' => 'A Cryptocurrency Investment Company',
 			'phoneNumber' => '+1 (516) 2001 615',
 			'address' => '38 Curity Ave, East York, ON M4B 0A2, Canada',
-			'email' => 'info@primeassetsltd.com',
-			'email2' => 'support@primeassetsltd.com',
-			'email3' => 'sales@primeassetsltd.com',
+			'email' => 'info@primeassetslimited.com',
+			'email2' => 'support@primeassetslimited.com',
+			'email3' => 'sales@primeassetslimited.com',
 			'instagram' => '',
 			'facebook' => '',
 			'linkedin' => '',
