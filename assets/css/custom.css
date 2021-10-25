@@ -1,0 +1,20 @@
+.translate {
+    padding: 10px 10px 0;
+    margin: 0 0 0 5px;
+    width: 90px;
+}
+
+@media (max-width: 600px) {
+    .translate {
+	    width: 100%;
+	}
+}
+.callout-danger { background: #b52323; font-size: 1.3rem; padding: 5px 20px; color: #e0d2d2;}
+
+.callout-success { background: #3db957; font-size: 1.2rem; padding: 5px 20px; color: #e2f3e5;}
+
+.callout .close span { color: #fff;}
+
+.callout p{ margin-bottom: 0px; color: #fff; font-size: 1.4rem; padding: 1rem 0;}
+
+.callout {margin-top: 1rem;}

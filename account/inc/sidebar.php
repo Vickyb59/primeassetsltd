@@ -5,7 +5,7 @@
     <div class="brand">
         <a href="<?php echo $baseurl ?>" class="logo">
             <span>
-                <img height="150%" src="../assets/images/logo/logo2.png" alt="royal-logo" class="logo-big">
+                <img height="150%" src="../assets/images/logo.png" alt="prime-logo" class="logo-md">
             </span>
         </a>
     </div>

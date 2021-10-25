@@ -24,7 +24,7 @@
 
 ?>
 
-     <body>
+     <body class="dark-topbar">
     <!-- Left Sidenav -->
     <?php include('inc/sidebar.php'); ?>
     <!-- end left-sidenav-->

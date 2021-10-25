@@ -12,151 +12,123 @@
    
 
 ?>
+  <body>
+    <!--========== Preloader ==========-->
+  <?php include('inc/pre-loader.php'); ?>
+  <!--========== Preloader ==========-->
 
-<body>
-    <div class="main--body">
-        <!--========== Preloader ==========-->
-        <?php include('inc/pre-loader.php'); ?>
-        <!--========== Preloader ==========-->        
+  <!-- scroll-to-top start -->
+  <?php include('inc/scroll-to-top.php'); ?>  
+  <!-- scroll-to-top end -->
 
-        <!--=======Header-Section Starts Here=======-->
-        <?php include('inc/header.php'); ?>
-        <!--=======Header-Section Ends Here=======-->
+  <!-- STAR ANIMATION -->
+  <?php include('inc/star-animation.php'); ?>
+  <!-- / STAR ANIMATION -->
+
+  <div class="page-wrapper">
+    <!-- header-section start  -->
+    <?php include('inc/header.php'); ?>    
+    <!-- header-section end  -->
+    
+    <!-- inner hero start -->
+    <section class="inner-hero bg_img" data-background="assets/images/bg/bg-1.jpg">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2 class="page-title">Contact Us</h2>
+            <ul class="page-breadcrumb">
+              <li><a href="<?= $baseurl ?>">Home</a></li>
+              <li>Contact</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- inner hero end -->
 
 
-        <!--=======Banner-Section Starts Here=======-->
-        <section class="bg_img hero-section-2 left-bottom-lg-max" data-background="assets/images/about/hero-bg5.png">
-            <div class="container">
-                <div class="hero-content text-white">
-                    <h1 class="title">Contact</h1>
-                    <ul class="breadcrumb">
-                        <li>
-                            <a href="<?= $baseurl ?>">Home</a>
-                        </li>
-                        <li>
-                            Contact
-                        </li>
-                    </ul>
+    <!-- contact section start -->
+    <section class="pt-120 pb-120">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="row">
+            <div class="col-lg-6 contact-thumb bg_img" data-background="assets/images/bg/bg-1.jpg"></div>
+            <div class="col-lg-6 contact-form-wrapper">
+              <h2 class="font-weight-bold">Contact.</h2>
+              <h2 class="font-weight-bold">Get in touch.</h2>
+              <span>Leave us a message</span>
+              <form class="contact-form mt-4">
+                <div class="form-row">
+                  <div class="form-group col-lg-6">
+                    <input type="text" name="contact-name" placeholder="Full Name" class="form-control">
+                  </div>
+                  <div class="form-group col-lg-6">
+                    <input type="email" name="contact-name" placeholder="Email Address" class="form-control">
+                  </div>
+                  <div class="form-group col-lg-12">
+                    <textarea class="form-control" placeholder="Message"></textarea>
+                  </div>
+                  <div class="col-lg-12">
+                    <button type="submit" class="cmn-btn">Send Message</button>
+                  </div>
                 </div>
+              </form>
             </div>
-        </section>
-        <!--=======Banner-Section Ends Here=======-->
-
-        <!--=======About-Section Starts Here=======-->
-        <section class="about-section padding-top padding-bottom section-bg">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 d-none d-lg-block rtl">
-                        <img src="assets/images/about/contact.png" alt="contact">
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="section-header left-style">
-                            <h2 class="title">we are always available to help</h2>
-                            <p>
-                                Visit us, call us, send us an email, chat with us online, or fill the form below. Whatever your choices expect prompt responses.
-                            </p>
-                        </div>
-                        <div class="about--content">
-                            <div class="about-item">
-                                <div class="about-thumb">
-                                    <img src="assets/images/about/contact01.png" alt="about">
-                                </div>
-                                <div class="about-content">
-                                    <h5 class="title">Address</h5>
-                                    <p>
-                                        <?= $settings->address; ?>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="about-item">
-                                <div class="about-thumb">
-                                    <img src="assets/images/about/contact02.png" alt="about">
-                                </div>
-                                <div class="about-content">
-                                    <h5 class="title">Phone Number</h5>
-                                    <p>
-                                        <?= $settings->phoneNumber; ?>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="about-item">
-                                <div class="about-thumb">
-                                    <img src="assets/images/about/contact03.png" alt="about">
-                                </div>
-                                <div class="about-content">
-                                    <h5 class="title">Email</h5>
-                                    <p>
-                                       <?= $settings->email; ?><br/> 
-                                       <?= $settings->email2; ?><br/> 
-                                       <?= $settings->email3; ?><br/> 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </div>
+        </div><!-- contact-wrapper end -->
+      </div>
+      <div class="container pt-120">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 mb-50">
+            <h2 class="font-weight-bold">Quick</h2>
+            <h2 class="font-weight-bold">Support.</h2>
+            <span>You can get all information</span>
+          </div>
+          <div class="col-lg-10">
+            <div class="row mb-none-30">
+              <div class="col-md-4 col-sm-6 mb-30">
+                <div class="contact-item">
+                  <i class="fas fa-phone-alt"></i>
+                  <h5 class="mt-2">Call Us</h5>
+                  <div class="mt-4">
+                    <p><?= $settings->phoneNumber; ?></p>
+                  </div>
+                </div><!-- contact-item end -->
+              </div>
+              <div class="col-md-4 col-sm-6 mb-30">
+                <div class="contact-item">
+                  <i class="fas fa-envelope"></i>
+                  <h5 class="mt-2">Mail Us</h5>
+                  <div class="mt-4">
+                    <p><?= $settings->email; ?><br/>
+                       <?= $settings->email2; ?><br/> 
+                       <?= $settings->email3; ?><br/>
+                    </p>
+                  </div>
+                </div><!-- contact-item end -->
+              </div>
+              <div class="col-md-4 col-sm-6 mb-30">
+                <div class="contact-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <h5 class="mt-2">Visit Us</h5>
+                  <div class="mt-4">
+                    <p><?= $settings->address; ?></p>
+                  </div>
+                </div><!-- contact-item end -->
+              </div>
             </div>
-        </section>
-        <!--=======About-Section Ends Here=======-->
-        <!--=======Contact-Section Starts Here=======-->
-        <section class="contact-section padding-bottom padding-top">
-            <div class="container">
-                <div class="contact-wrapper padding-top">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-5 col-xl-4 offset-xl-1">
-                            <div class="contact-header">
-                                <h2 class="title">Get in touch</h2>
-                                <p>Ready to make life easier?</p>
-                            </div>
-                            <div class="contact-content">
-                                <h3 class="title">Have questions?</h3>
-                                <p>
-                                    Have questions about payments or price plans? We have answers!
-                                </p>
-                                <a href="faq">Read F.A.Q <i class="flaticon-right-arrow"></i></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-5 offset-xl-1">
-                            <form class="contact-form" id="contact_form_submit">
-                                <div class="form-group">
-                                    <label for="name">First name</label>
-                                    <input type="text" id="name" placeholder="Enter first name" name="name">
-                                </div>
-                                <div class="form-group">
-                                    <label for="surename">Last name</label>
-                                    <input type="text" id="surename" placeholder="Enter last name" name="name">
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">Email address</label>
-                                    <input type="text" id="email" placeholder="Enter your email" name="email">
-                                </div>
-                                <div class="form-group">
-                                    <label for="message">How can we help</label>
-                                    <textarea name="message" id="message" placeholder="Enter Message"></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <input type="submit" value="Send Message">
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=38%20Curity%20Ave%2C%20East%20York%2C%20ON%20M4B%200A2%2C%20Canada&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net">insert google map into website</a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style></div>
-            </div>
-        </section>
-        <!--=======Contact-Section Ends Here=======-->
-        
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact section end -->
+    
+    <!-- footer section start -->
+    <?php include('inc/footer.php') ?>
+    <!-- footer section end -->
+  </div> <!-- page-wrapper end -->
+  <?php include('inc/scripts.php') ?>
+  </body>
 
-        <!-- ==========Footer-Section Starts Here========== -->
-        <?php include('inc/footer.php') ?>
-        <!-- ==========Footer-Section Ends Here========== -->
-
-        
-    </div>
-
-    <?php include('inc/scripts.php') ?>
-</body>
-
-
-<!-- Mirrored from <?= $settings->siteTitle ?> by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Nov 2020 21:30:26 GMT -->
+<!-- Mirrored from template.viserlab.com/hyiplab/demo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 16 Oct 2021 16:37:40 GMT -->
 </html>

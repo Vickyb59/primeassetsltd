@@ -5,111 +5,91 @@
 
     if(isset($_SESSION['user'])){
       header('location: account/dashboard.php');
-   }
+    }
 
     $page_name = 'Password Reset';
     $page_parent = '';
     $page_title = 'Welcome to the Official Website of '.$settings->siteTitle;
     $page_description = $settings->siteTitle.' provides quality infrastructure backed high-performance cloud computing services for cryptocurrency mining. Choose a plan to get started today! What are you waiting for? Together We Grow!...';
-    include('inc/head.php');  
+    include('inc/head.php');
 
 ?>
+  <body>
+    <!--========== Preloader ==========-->
+  <?php include('inc/pre-loader.php'); ?>
+  <!--========== Preloader ==========-->
 
-<body>
-    <div class="main--body">
-        <!--========== Preloader ==========-->
-        <?php include('inc/pre-loader.php'); ?>
-        <!--========== Preloader ==========-->        
+  <!-- scroll-to-top start -->
+  <?php include('inc/scroll-to-top.php'); ?>  
+  <!-- scroll-to-top end -->
 
-        <!--=======Header-Section Starts Here=======-->
-        <?php include('inc/header.php'); ?>
-        <!--=======Header-Section Ends Here=======-->
+  <!-- STAR ANIMATION -->
+  <?php include('inc/star-animation.php'); ?>
+  <!-- / STAR ANIMATION -->
 
+  <div class="page-wrapper">
 
-        <!--=======Banner-Section Starts Here=======-->
-        <section class="bg_img hero-section-2 left-bottom-lg-max" data-background="assets/images/about/hero-bg5.png">
-            <div class="container">
-                <div class="hero-content text-white">
-                    <h1 class="title">Password Reset</h1>
-                    <ul class="breadcrumb">
-                        <li>
-                            <a href="<?= $baseurl ?>">Home</a>
-                        </li>
-                        <li>
-                            Password Reset
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <!--=======Banner-Section Ends Here=======-->
-
-
-        <!--=======Contact-Section Starts Here=======-->
-        <section class="contact-section padding-bottom padding-top">
-            <div class="container">
-                <div class="contact-wrapper padding-top">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-5 col-xl-4 offset-xl-1">
-                            <div class="contact-header">
-                                <h4 class="title">Enter Your New Password</h4>
-                                <?php
-                                    if(isset($_SESSION['error'])){
-                                      echo "
-                                        <div class='callout callout-danger text-center'>
-                                          <p>".$_SESSION['error']."</p> 
-                                        </div>
-                                      ";
-                                      unset($_SESSION['error']);
-                                    }
-                                    if(isset($_SESSION['success'])){
-                                      echo "
-                                        <div class='callout callout-success text-center'>
-                                          <p>".$_SESSION['success']."</p> 
-                                        </div>
-                                      ";
-                                      unset($_SESSION['success']);
-                                    }
-                                ?>
-                                <p>
-                                   Don't have an account? <a href="register">Sign Up Here</a>
-                                </p>
-                                <p>I remember my password <a href="login">Click Here</a></p>
-                                
-                            </div>
-                            <div class="contact-content">
-                            </div>
+    <!-- account section start -->
+    <div class="account-section bg_img" data-background="assets/images/bg/bg-5.jpg">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-5 col-lg-7">
+            <div class="account-card">
+              <div class="account-card__header bg_img overlay--one" data-background="assets/images/bg/bg-6.jpg">
+                <h2 class="section-title"><span class="base--color">PRIME ASSETS</span> Password Reset</h2>
+                <p>Enter Your New Password</p>
+                <?php
+                    if(isset($_SESSION['error'])){
+                      echo "
+                        <div class='callout callout-danger text-center'>
+                          <p>".$_SESSION['error']."</p> 
                         </div>
-                        <div class="col-lg-5 offset-xl-1">
-                            <form class="contact-form" id="contact_form_submit" method="post" action="password_new.php?code=<?php echo $_GET['code']; ?>&user=<?php echo $_GET['user']; ?>">
-                                <div class="form-group">
-                                    <label for="name">Password</label>
-                                    <input type="password" id="name" placeholder="Enter New Password" name="password" required>
-                                    <label for="name">Retype Password</label>
-                                    <input type="password" id="name" placeholder="Enter Password Again" name="repassword" required>
-                                </div>
-                                <div class="form-group">
-                                    <button type="submit" name="reset" class="custom-button"> Reset Password</button>
-                                </div>
-                            </form>
+                      ";
+                      unset($_SESSION['error']);
+                    }
+                    if(isset($_SESSION['success'])){
+                      echo "
+                        <div class='callout callout-success text-center'>
+                          <p>".$_SESSION['success']."</p> 
                         </div>
+                      ";
+                      unset($_SESSION['success']);
+                    }
+                ?>
+              </div>
+              <div class="account-card__body">
+                <form class="mt-4" method="post" action="password_new.php?code=<?php echo $_GET['code']; ?>&user=<?php echo $_GET['user']; ?>">
+                  <div class="form-group">
+                    <label>New Password</label>
+                    <input type="password" class="form-control" placeholder="Enter New Password" name="password" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Retype New Password</label>
+                    <input type="password" class="form-control" placeholder="Enter New Password Again" name="repassword" required>
+                  </div>
+                  <div class="mt-3">
+                    <button type="submit" name="reset" class="cmn-btn">Reset Password</button>
+                  </div>
+                  <div class="form-row mt-3">
+                    <div class="col-sm-6 text-sm-left">
+                      <p class="f-size-14">Don't have an account? <a href="register" class="base--color">Sign Up</a></p>
                     </div>
-                </div>
+                    <div class="col-sm-6 text-sm-right">
+                      <p class="f-size-14">Remember password? <a href="login" class="base--color">Click Here</a></p>
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div>
-        </section>
-        <!--=======Contact-Section Ends Here=======-->
-        
-
-        <!-- ==========Footer-Section Starts Here========== -->
-        <?php include('inc/footer.php') ?>
-        <!-- ==========Footer-Section Ends Here========== -->
-
-        
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- account section end -->
 
-    <?php include('inc/scripts.php') ?>
-</body>
+  </div> <!-- page-wrapper end -->
+  <?php include('inc/scripts.php') ?>
+  </body>
 
-
-<!-- Mirrored from <?= $settings->siteTitle ?> by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Nov 2020 21:30:26 GMT -->
+<!-- Mirrored from template.viserlab.com/hyiplab/demo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 16 Oct 2021 16:37:40 GMT -->
 </html>

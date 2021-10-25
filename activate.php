@@ -85,54 +85,57 @@
 ?>
 
 <body>
-    <div class="main--body">
-        <!--========== Preloader ==========-->
-        <?php include('inc/pre-loader.php'); ?>
-        <!--========== Preloader ==========-->        
+    <!--========== Preloader ==========-->
+  <?php include('inc/pre-loader.php'); ?>
+  <!--========== Preloader ==========-->
 
-        <!--=======Header-Section Starts Here=======-->
-        <?php include('inc/header.php'); ?>
-        <!--=======Header-Section Ends Here=======-->
+  <!-- scroll-to-top start -->
+  <?php include('inc/scroll-to-top.php'); ?>  
+  <!-- scroll-to-top end -->
 
+  <!-- STAR ANIMATION -->
+  <?php include('inc/star-animation.php'); ?>
+  <!-- / STAR ANIMATION -->
 
-        <!--=======Banner-Section Starts Here=======-->
-        <section class="bg_img hero-section-2 left-bottom-lg-max" data-background="assets/images/about/hero-bg5.png">
-            <div class="container">
-                <div class="hero-content text-white">
-                    <h1 class="title">Account Activation</h1>
-                    <ul class="breadcrumb">
-                        <li>
-                            <a href="<?= $baseurl ?>">Home</a>
-                        </li>
-                        <li>
-                            Account Activation
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <!--=======Banner-Section Ends Here=======-->
+  <div class="page-wrapper">
+    <!-- header-section start  -->
+    <?php include('inc/header.php'); ?>    
+    <!-- header-section end  -->
+    
+    <!-- inner hero start -->
+    <section class="inner-hero bg_img" data-background="assets/images/bg/bg-1.jpg">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2 class="page-title">Account Activation</h2>
+            <ul class="page-breadcrumb">
+              <li><a href="<?= $baseurl ?>">Home</a></li>
+              <li>Account Activation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- inner hero end -->
 
+    <!-- contact section start -->
+    <section class="pt-50 pb-120">
+      <div class="container pt-120">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 mb-50">
+            <h2 class="font-weight-bold"><?php echo $output; ?></h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact section end -->
+    
+    <!-- footer section start -->
+    <?php include('inc/footer.php') ?>
+    <!-- footer section end -->
+  </div> <!-- page-wrapper end -->
+  <?php include('inc/scripts.php') ?>
+  </body>
 
-        <!--=======Contact-Section Starts Here=======-->
-        <section class="contact-section padding-bottom padding-top">
-            <div class="container text-center">
-                <?php echo $output; ?>
-            </div>
-        </section>
-        <!--=======Contact-Section Ends Here=======-->
-        
-
-        <!-- ==========Footer-Section Starts Here========== -->
-        <?php include('inc/footer.php') ?>
-        <!-- ==========Footer-Section Ends Here========== -->
-
-        
-    </div>
-
-    <?php include('inc/scripts.php') ?>
-</body>
-
-
-<!-- Mirrored from <?= $settings->siteTitle ?> by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Nov 2020 21:30:26 GMT -->
+<!-- Mirrored from template.viserlab.com/hyiplab/demo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 16 Oct 2021 16:37:40 GMT -->
 </html>

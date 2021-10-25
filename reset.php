@@ -3,7 +3,7 @@
 	use PHPMailer\PHPMailer\PHPMailer;
 	use PHPMailer\PHPMailer\Exception;
 
-	include 'includes/session.php';
+	include 'inc/session.php';
 
 	if(isset($_POST['reset'])){
 		$email = $_POST['email'];
@@ -86,6 +86,6 @@
 		$_SESSION['error'] = 'Input email associated with account';
 	}
 
-	header('location: index.php');
+	header('location: password_forgot.php');
 
 ?>

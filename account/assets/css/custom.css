@@ -1,5 +1,5 @@
 .bitcoin-converter {
-    background-color: #557beb;
+    background-color: #ca9765;
     padding: 0.01rem;
     margin-top: 40px;
 }
@@ -9,7 +9,7 @@
 }
 .bitcoin-converter table {
     border: none;
-    background-color: #557beb;
+    background-color: #ca9765;
 }
 .bitcoin-converter table tbody tr td {
     border: none;

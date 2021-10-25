@@ -1,31 +1,30 @@
+<!-- meta tags and other links -->
 <!DOCTYPE html>
 <html lang="en">
 
-
-<!-- Mirrored from pixner.net/hyipland/demo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Nov 2020 21:28:58 GMT -->
+<!-- Mirrored from template.viserlab.com/hyiplab/demo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 16 Oct 2021 16:37:19 GMT -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="<?php echo $page_description; ?>" />
-    <meta name="keywords" content="<?php echo $settings->siteTitle ?>, Secure Investment, Online Investment, Trusted Online Investment, Long Term Online Investment, 100% Secure Online Business, Top Online Investment Company, Invest and Earn on Daily Basis, Online Investment Services, Investment, Invest with us, Invest with 100% Guaranty, Money Back Guaranty, Hot Investment Company, Risk Free Online Investment, Forex Trading, Forex, Stock Exchange, Invest in Forex Trading, Invest in Stock Exchange Markets, Invest in Multinational Companies, Minimum Invest $100, Start Online Investment Just in $100, Daily earn Daily Withdraw, Minimum Withdraw $5.10">
-
-    <title><?php echo ($page_name == 'Home') ? $settings->siteTitle. ' | ' .$settings->siteTagline : $page_name. ' | ' .$settings->siteTitle;  ?></title>
-
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="assets/css/odometer.css">
-    <link rel="stylesheet" href="assets/css/nice-select.css">
-    <link rel="stylesheet" href="assets/css/owl.min.css">
-    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/flaticon.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="<?php echo $page_description; ?>" />
+  <meta name="keywords" content="<?php echo $settings->siteTitle ?>, Secure Investment, Online Investment, Trusted Online Investment, Long Term Online Investment, 100% Secure Online Business, Top Online Investment Company, Invest and Earn on Daily Basis, Online Investment Services, Investment, Invest with us, Invest with 100% Guaranty, Money Back Guaranty, Hot Investment Company, Risk Free Online Investment, Forex Trading, Forex, Stock Exchange, Invest in Forex Trading, Invest in Stock Exchange Markets, Invest in Multinational Companies, Minimum Invest $100, Start Online Investment Just in $100, Daily earn Daily Withdraw, Minimum Withdraw $5.10">
+  <title><?php echo ($page_name == 'Home') ? $settings->siteTitle. ' | ' .$settings->siteTagline : $page_name. ' | ' .$settings->siteTitle;  ?></title>
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="16x16">
+  <!-- bootstrap 4  -->
+  <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+  <!-- fontawesome 5  -->
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <!-- line-awesome webfont -->
+  <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/vendor/animate.min.css">
+  <!-- slick slider css -->
+  <link rel="stylesheet" href="assets/css/vendor/slick.css">
+  <link rel="stylesheet" href="assets/css/vendor/dots.css">
+  <!-- dashdoard main css -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <!-- custom css -->
+  <link rel="stylesheet" href="assets/css/custom.css">
 </head>
-
 
 <?php
 
