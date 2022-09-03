@@ -50,8 +50,10 @@
               <a href="#addnew" data-toggle="modal" class="btn btn-primary btn-sm btn-flat"><i class="fa fa-plus"></i> New</a>
 
               <a href="#msg_all" data-toggle="modal" class="btn btn-primary btn-sm btn-flat"><i class="fa fa-envelope"></i> Message all Users</a>
+
             </div>
             <div class="box-body">
+              <p><i class="fa fa-eye"></i> Click on the user's email to view details about the user</p>
               <table id="example1" class="table table-bordered">
                 <thead>
                   <th>Photo</th>
@@ -78,7 +80,7 @@
                               <img src='".$image."' height='30px' width='30px'>
                               <span class='pull-right'><a href='#edit_photo' class='photo' data-toggle='modal' data-id='".$row['id']."'><i class='fa fa-edit'></i></a></span>
                             </td>
-                            <td>".$row['email']."</td>
+                            <td><a href='view.php?i_id=".$row["id"]."'>".$row['email']."</a></td>
                             <td>".$row['full_name']."</td>
                             <td>
                               ".$status."

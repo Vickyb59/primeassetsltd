@@ -100,7 +100,7 @@
                   </div>
                   <div class="form-group">
                     <label>Referral</label>
-                    <input type="text" class="form-control" placeholder="(Optional) Input a Referral Code if you have one" <?= isset($referral) ? "disabled" : ""; ?> name="referral" value="<?= isset($referral) ? $referral : '' ?>">
+                    <input type="text" class="form-control" placeholder="(Optional) Input a Referral Code if you have one" <?= isset($referral) ? "readonly" : ""; ?> name="referral" value="<?= isset($referral) ? $referral : '' ?>">
                     <?= isset($referral) ? '<p class="f-size-14">'.$ref_sentence.'</p>' : '' ?>
                   </div>
                   <div class="form-row">

@@ -6,7 +6,7 @@
 
 @media (max-width: 600px) {
     .translate {
-	    width: 100%;
+	    display: none;
 	}
 }
 .callout-danger { background: #b52323; font-size: 1.3rem; padding: 5px 20px; color: #e0d2d2;}

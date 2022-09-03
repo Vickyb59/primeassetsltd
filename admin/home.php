@@ -99,7 +99,7 @@
             <div class="icon">
               <i class="fa fa-barcode"></i>
             </div>
-            <a href="products.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="investment_plans.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
