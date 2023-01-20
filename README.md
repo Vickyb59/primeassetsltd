@@ -6,3 +6,6 @@
 #Import database from databse folder
 #Create a new user on your database
 #Make the type and status 1, that should be your admin
+
+#use the project as you wish.
+#pull request or what have you.
